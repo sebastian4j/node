@@ -9,11 +9,12 @@
     "pg": "^7.11.0"
   },
   "scripts": {
-    "test": "mocha --timeout 20000 tests/src/"
+    "test": "nyc --reporter=html --reporter=text mocha --timeout 20000 tests/src/"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
     "testcontainers": "^1.1.19"
   }
 }
